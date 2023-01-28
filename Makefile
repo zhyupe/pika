@@ -9,7 +9,7 @@ ROCKSDB_CXXFLAGS += -Wno-error=deprecated-copy -Wno-error=pessimizing-move -Wno-
 endif
 PROFILING_FLAGS=-pg
 OPT=
-LDFLAGS += -Wl,-rpath=$(RPATH)
+LDFLAGS += -s -Wl,-rpath=$(RPATH)
 
 # DEBUG_LEVEL can have two values:
 # * DEBUG_LEVEL=2; this is the ultimate debug mode. It will compile pika
